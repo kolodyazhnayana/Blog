@@ -1,0 +1,23 @@
+.button {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: lightsalmon;
+    width: 100%;
+}
+
+.button__filter {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.button__active {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

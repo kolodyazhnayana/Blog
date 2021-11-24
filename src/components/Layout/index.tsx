@@ -4,7 +4,7 @@ interface IProps {
     children: React.ReactNode
 }
 
-const Layout: React.FC<IProps> = ({ children }) => {
+const Layout = ({ children }: IProps) => {
     return (
         <div className={styles.layout}>{children}</div>
     )

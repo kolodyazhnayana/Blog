@@ -2,14 +2,16 @@ import styles from './postCard.module.css'
 
 interface IProps {
     title: string,
-    body: string
+    body: string,
+    user: string
 }
 
-const PostCard: React.FC<IProps> = ({ title, body }) => {
+const PostCard = ({ title, body, user}: IProps) => {
     return (
         <div className={styles.card__container}>
             <h1>{title}</h1>
             <p>{body}</p>
+            <p>{user}</p>
         </div>
     )
 }

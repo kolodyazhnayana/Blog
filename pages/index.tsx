@@ -42,7 +42,13 @@ const Home: NextPage = () => {
           <Container>
             <Filters users={users} />
             <div>
-              {posts.map(item => <PostCard key={item.id} title={item.title} body={item.body} />)}
+              {posts.map(item => {
+                  const user = users.filter(elem => elem.id === item.userId)
+                  return (
+                      <PostCard key={item.id} title={item.title} body={item.body} user={user[0].name} />
+                  )
+                }
+              )}
             </div>
           </Container>
         </Layout>
