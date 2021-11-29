@@ -3,8 +3,8 @@ import styles from './button.module.css'
 interface IProps {
     value: string,
     onClick: (event: React.SyntheticEvent) => void,
-    type: string,
-    active: boolean
+    type?: string,
+    active?: boolean
 }
 
 const Button = ({value, onClick, type, active}: IProps) => {
